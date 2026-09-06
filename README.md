@@ -101,3 +101,43 @@ A pre-check rejects the run if patients exceed 3.5× the nurse count.
 ## Stage 5 — Web interface
 
 `app.py` plus a set of Bootstrap templates (`index`, `about`, `faqs`, `prevention`, `contact`, `upload`, `results_chest`, `results_ct`).
+
+---
+
+## Running it
+```bash
+git clone https://github.com/RovshanBayramRB/AI-based-Hospital-Management-System.git
+cd AI-based-Hospital-Management-System
+pip install pulp pandas numpy scikit-learn seaborn matplotlib tensorflow
+jupyter notebook
+```
+
+---
+
+## Repository structure
+
+```
+.
+├── Python Codes/
+│   ├── 1. Code for Resource Management.ipynb
+│   ├── 2. Code for Nurse Scheduling.ipynb
+│   ├── 3. Code for X-Ray Classification for Pneumonia.ipynb
+│   ├── 4. Code for Patient Classification for Criticality Level.ipynb
+│   └── 5. Code for Patient Distribution among Nurses.ipynb
+│
+├── app.py                  # Flask app (see Known issues)
+├── requirements.txt
+│
+├── index.html              # Templates
+├── about.html
+├── faqs.html
+├── prevention.html
+├── contact.html
+├── upload.html
+├── results_chest.html
+├── results_ct.html
+│
+├── css/  js/  scss/  fonts/   # Front-end assets
+├── inc/sendemail.php
+└── README.md
+```
